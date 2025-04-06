@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Nishtha Goyal</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experiences</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li> <!-- New link -->
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Nishtha Goyal</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experiences</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li> <!-- New link -->
+                <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="profile-pic">
+            <img src="dsaportifolioimg.jpg" alt="Nishtha's Profile Picture" class="profile-pic-img" />
+        </div>
+        <div class="profile-text">
+            <p class="profile-text-p1">Hello,I am</p>
+            <h1 class="title">NISHTHA GOYAL</h1>
+            <p class="profile-text-p2">A Data Science Enthusiast</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('RESUME.NISHTHA.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contacts
+                </button>
+            </div>
+            <div class="social-sources">
+                <img src="linkedin.png" alt="My LinkedIn Profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/nishtha-goyal-8719902a7'" />
+
+                <img src="github.png" alt="My GitHub Profile" class="icon"
+                    onclick="location.href='https://github.com/NishthaaGoyal' " />
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="about">
+        <p class="profile-text-p1">Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="profile-pic section-pic-container">
+                <img src="aboutimg.jpg" class="about-pic" alt="About Picture">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-containers">
+                        <img src="experience.png" alt="Experiences img" class="icon">
+                        <h3>Experience</h3>
+                        <p>Corporate Head<br>Data Science Club SRM</p>
+                    </div>
+                    <div class="details-containers">
+                        <img src="education.png" alt="Education img" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Tech Computer Science <br>SRM Institute of Science and Technology<br>9.52 CGPA (Current)
+                        </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>A self-driven and meticulous B.Tech student in
+                        CSE - Data Science. My studies have given me a
+                        detailed understanding of Data Science and
+                        other technologies and their application through
+                        data analysis. Looking to apply my skills as a
+                        programmer with proven skills in C++, Python
+                        towards data analysis solutions.</p>
+                </div>
+            </div>
+        </div>
+        <img src="arrow.png" alt="Arrow Img" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="profile-text-p1">Explore My</p>
+        <h2 class="title">Experience</h2>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Languages and Frameworks</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="checkmark.png" class="icon" alt="checkmark img">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" class="icon" alt="checkmark img">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" class="icon" alt="checkmark img">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" class="icon" alt="checkmark img">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" class="icon" alt="checkmark img">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" class="icon" alt="checkmark img">
+                            <div>
+                                <h3>C/C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" class="icon" alt="checkmark img">
+                            <div>
+                                <h3>Pandas</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" class="icon" alt="checkmark img">
+                            <div>
+                                <h3>Numpy</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <img src="arrow.png" alt="Arrow Img" class="icon arrow" onclick="location.href='./#projects'">
+
+    </section>
+
+    <section id="projects">
+        <p class="profile-text-p1">Browse My</p>
+        <h1 class="title">Projects</h1>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img src="nifty500.jpg" class="project-img" alt="Project 1">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Nifty500-Analysis and Prediction</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn"  onclick="location.href='https://github.com/NishthaaGoyal/Nifty500_ML' ">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://live-demo-link.com'">Live Demo</button>
+                    </div>
+                </div>
+                
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img src="icmgee.jpg" class="project-img" alt="Project 3">
+                    </div>
+                    <h2 class="experience-sub-title project-title">ICMGEE Websie</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/NishthaaGoyal/ICMGEE_WebDev'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://icaiir-50.vercel.app/'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img src="Amazon.jpg" class="project-img" alt="Project 4">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Amazon UI Clone</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/NishthaaGoyal/Nishtha_Amazon'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://live-demo-link.com'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img src="HealthConnect.jpg" class="project-img" alt="Project 2">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Health Connect-Super Health App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com/your-repo'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://live-demo-link.com'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="certificates">
+        <p class="profile-text-p1">Browse My</p>
+        <h1 class="title">Certificates</h1>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img src="scrollhacks.jpg" class="project-img" alt="Certificate 1">
+                    </div>
+                    <h2 class="experience-sub-title project-title">ScrollHacks-Hackathon</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://drive.google.com/file/d/1Me7Gt_zo77V_kOm7xTlDA0cMB6HfR1Pb/view?usp=drivesdk '">View</button>
+                    </div>
+                </div>
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img src="I-Hack(IIT-Bombay).png" class="project-img" alt="Certificate 2">
+                    </div>
+                    <h2 class="experience-sub-title project-title">I-Hack (IIT-Bombay) Finalist</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://drive.google.com/file/d/1iANw2wKsQDpzIpBc3wCU4l516lJso8Z3/view?usp=drivesdk '">View</button>
+                    </div>
+                </div>
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img src="PentathonWinner.png" class="project-img" alt="Certificate 3">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Pentathon 2.0-Webathon 2.0 Winner</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://drive.google.com/file/d/1WmERx76UcxfkfjXVQoKYMIo4fIYAfHgM/view?usp=drivesdk '">View</button>
+                    </div>
+                </div>
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img src="NPTELPIJ.png" class="project-img" alt="Certificate 4">
+                    </div>
+                    <h2 class="experience-sub-title project-title">NPTEL-Programming In Java</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://drive.google.com/file/d/1fx5ldgaVg8EHMYhUE7gGPTBDSA4SsTUM/view?usp=drivesdk '">View</button>
+                    </div>
+                </div>
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img src="PentathonHackSteet.png" class="project-img" alt="Certificate 5">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Pentathon 2.0 - HackStreet 3.0 Finalist</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://drive.google.com/file/d/1hPFkM5GbZd22YsDVnWyBuFRYo0kl1Aqp/view?usp=drivesdk '">View</button>
+                    </div>
+                    
+                </div>
+                <div class="details-containers color-container">
+                    <div class="article-container">
+                        <img src="MLCoursera.png" class="project-img" alt="Certificate 5">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Supervised Learning ML Coursera</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-1 project-btn" onclick="location.href='https://drive.google.com/file/d/1QR6cTZjX52Zm0nh4S9-aydEnhZ1Jlr3z/view?usp=drivesdk '">View</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="profile-text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">goyalnishtha35@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+
+            <p><a href="https://www.linkedin.com/in/nishtha-goyal-8719902a7">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>&copy; 2025 Nishtha Goyal. All rights reserved.</p>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experiences</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li> <!-- New link -->
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
