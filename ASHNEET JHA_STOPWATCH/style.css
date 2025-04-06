@@ -1,0 +1,194 @@
+:root {
+    --bg: linear-gradient(to bottom right, #e0eafc, #cfdef3);
+    --text-color: #1a1a1a;
+    --card-bg: rgba(255, 255, 255, 0.7);
+    --btn-color: #0d6efd;
+    --btn-color-2: #198754;
+    --btn-color-3: #dc3545;
+    --shadow: rgba(0, 0, 0, 0.2);
+    --blur: 10px;
+  }
+  
+  body.dark {
+    --bg: linear-gradient(to bottom right, #1f3b77, #2d4f91);
+    --text-color: #f0f0f0;
+    --card-bg: rgba(0, 0, 0, 0.4);
+    --btn-color: #61dafb;
+    --btn-color-2: #28a745;
+    --btn-color-3: #ff4b5c;
+    --shadow: rgba(255, 255, 255, 0.1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: var(--bg);
+    color: var(--text-color);
+    min-height: 100vh;
+    transition: all 0.3s ease;
+  }
+  
+  header {
+    backdrop-filter: blur(var(--blur));
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px var(--shadow);
+  }
+  
+  .theme-toggle input[type="checkbox"] {
+    display: none;
+  }
+  
+  .theme-toggle label {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.3rem 1rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 8px var(--shadow);
+    transition: 0.3s ease;
+  }
+  
+  .theme-toggle label:hover {
+    opacity: 0.8;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 1rem;
+  }
+  
+  .card {
+    background: var(--card-bg);
+    backdrop-filter: blur(var(--blur));
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px var(--shadow);
+    width: 320px;
+    transition: all 0.3s ease;
+  }
+  
+  .card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #display, #timerDisplay {
+    font-size: 2rem;
+    margin: 1rem 0;
+    font-weight: 600;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #startStop, #startTimer {
+    background-color: var(--btn-color-2);
+  }
+  #reset, #resetTimer {
+    background-color: var(--btn-color-3);
+  }
+  #lap {
+    background-color: var(--btn-color);
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+  
+  #laps {
+    list-style: none;
+    margin-top: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0;
+  }
+  
+  #laps li {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin: 0.4rem auto;
+    width: 80%;
+    backdrop-filter: blur(4px);
+    font-size: 1rem;
+    color: var(--text-color);
+    animation: fadeInLap 0.3s ease;
+    box-shadow: 0 4px 12px var(--shadow);
+  }
+  
+  .timer-input {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .timer-input input {
+    width: 60px;
+    padding: 0.4rem;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    background: rgba(255,255,255,0.1);
+    color: var(--text-color);
+  }
+  
+  @keyframes fadeInLap {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  }
+  
