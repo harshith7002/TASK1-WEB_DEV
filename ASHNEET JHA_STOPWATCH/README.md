@@ -42,4 +42,6 @@ It is built using **HTML**, **CSS**, and **JavaScript** — without any framewor
 - Responsive layout using Flexbox
 - Basic animations and hover effects
 - Theme toggling using JavaScript and CSS variables
-Thank You
+---
+
+## Thank You
