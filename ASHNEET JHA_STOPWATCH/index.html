@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stopwatch & Timer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    ⏱️ Stopwatch by ASHNEET JHA, II Year CSE Core, SRMIST KTR
+    <div class="theme-toggle">
+      <input type="checkbox" id="toggleTheme" />
+      <label for="toggleTheme">🌗 Theme</label>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h1>⏱️ Stopwatch</h1>
+      <div id="display">00:00:00</div>
+      <div class="buttons">
+        <button id="startStop">▶️ Start</button>
+        <button id="reset">🔄 Reset</button>
+        <button id="lap">📍 Lap</button>
+      </div>
+      <ul id="laps"></ul>
+    </div>
+
+    <div class="card">
+      <h1>⏳ Timer</h1>
+      <div class="timer-input">
+        <input type="number" id="timerHours" placeholder="HH" min="0" max="99"/>
+        <input type="number" id="timerMinutes" placeholder="MM" min="0" max="59"/>
+        <input type="number" id="timerSeconds" placeholder="SS" min="0" max="59"/>
+      </div>
+      <div id="timerDisplay">00:00:00</div>
+      <div class="buttons">
+        <button id="startTimer">▶️ Start</button>
+        <button id="resetTimer">🔄 Reset</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
