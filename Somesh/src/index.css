@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #6b7280 #f3f4f6;
+}
+
+.dark .custom-scrollbar {
+  scrollbar-color: #4b5563 #1f2937;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-75%);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: translateY(2px);
+    animation-timing-function: ease-in;
+  }
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.dark {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+.dark .bg-gray-900 {
+  background-color: #1f2937;
+}
+
+.dark .text-gray-100 {
+  color: #f3f4f6;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+*:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.dark *:focus-visible {
+  outline-color: #60a5fa;
+}
